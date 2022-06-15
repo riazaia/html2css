@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+textarea {
+  border-radius: 24px;
+  width: 40vw;
+  height: 40vh;
+  padding: 16px;
+  font: inherit;
+  border: 2px dashed #94c84d;
+  background: rgb(148, 200, 77);
+  background: linear-gradient(
+    130deg,
+    rgba(148, 200, 77, 0.3) 34%,
+    rgba(224, 197, 40, 0.3) 78%
+  );
+}
+
+header, footer {
+	width: 100%;
+	text-align: center;
+	}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	width: 100%;
+	}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 12px auto;
+  background-color: #94c84d;
+  font: inherit;
+}
+
+button:hover, label:hover {
+  box-shadow: 0px 0px 12px 5px hsl(54, 100%, 62%);
+  border-radius: 12px;
+}
+
+label {
+  margin: 6px auto;
+  padding: 6px;
+}
+
+legend {
+  font-variant: small-caps;
+  font-size: 20px;
+}
+input {
+	margin: 6px 12px;
+	}
+.boxes {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 90%;
+	}
+
+.options {
+	width: 80%;
+	margin: auto;
+}
+
+.arrow {
+	font-size: 40px;
+}

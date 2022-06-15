@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Parser</title>
+	<link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-  </head>
-  <body>
-    <h1>make css from html</h1>
-    <fieldset>
+</head>
+<body>
+    <header><h1>make css from html</h1></header>
+	<main>
+    <fieldset class="options">
       <legend>Choose what to extract:</legend>
       <label for="tags"
         ><input type="checkbox" id="tags" name="option" data-status="true" />
@@ -30,13 +33,14 @@
         ids</label
       ><br />
     </fieldset>
+	<button id="extractor">Do the thing!</button>
+    <div class="boxes">
+      <textarea id="input" placeholder="Paste your HTML..." autofocus></textarea>
+      <p class="arrow">➡</p>
+      <textarea id="output" placeholder="Your CSS will appear here..." readonly></textarea>
+    </div>
+	</main>
+	<footer><p>made with love and notepad++</p></footer>
 
-    <p><button id="extractor">Do!</button></p>
-
-    <p>
-      <textarea id="input" cols="60" rows="10" placeholder="Paste your HTML..." autofocus></textarea>
-      ⇨
-      <textarea id="output" cols="60" rows="10" placeholder="Your CSS will appear here..." readonly></textarea>
-    </p>
-  </body>
+</body>
 </html>
