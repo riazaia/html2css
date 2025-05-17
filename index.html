@@ -1,46 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML to CSS</title>
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header><h1>make css from html</h1></header>
-	<main>
-    <fieldset class="options">
-      <legend>Choose what to extract:</legend>
-      <label for="tags"
-        ><input type="checkbox" id="tags" name="option" data-status="true" />
-        elements </label
-      ><br />
-      <label for="classes"
-        ><input
-          type="checkbox"
-          id="classes"
-          name="option"
-          data-status="false"
-        />
-        classes</label
-      ><br />
+    <main>
+      <fieldset class="options">
+        <legend>Choose what to extract:</legend>
+        <label for="element"
+          ><input type="checkbox" id="element" name="option" /> HTML elements </label
+        ><br />
+        <label for="class"
+          ><input type="checkbox" id="class" name="option" /> Classes</label
+        ><br />
 
-      <label for="ids"
-        ><input type="checkbox" id="ids" name="option" data-status="false" />
-        ids</label
-      ><br />
-    </fieldset>
-	<button id="extractor">Do the thing!</button>
-    <div class="boxes">
-      <textarea id="input" placeholder="Paste your HTML..." autofocus></textarea>
-      <p class="arrow">➡</p>
-      <textarea id="output" placeholder="Your CSS will appear here..." readonly></textarea>
-    </div>
-	</main>
-	<footer><p>made with love and notepad++</p></footer>
-
-</body>
+        <label for="id"
+          ><input type="checkbox" id="id" name="option" /> IDs</label
+        ><br />
+      </fieldset>
+      <button id="extractor">Do the thing!</button>
+      <div class="boxes">
+        <textarea
+          id="input"
+          placeholder="Paste your HTML..."
+          autofocus
+        ></textarea>
+        <p class="arrow">➡</p>
+        <textarea
+          id="output"
+          placeholder="Your CSS will appear here..."
+          readonly
+        ></textarea>
+      </div>
+    </main>
+    <footer><p>made with love and notepad++</p></footer>
+  </body>
 </html>
